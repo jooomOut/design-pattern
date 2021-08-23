@@ -5,14 +5,15 @@ import java.util.Currency;
 import java.util.Iterator;
 import java.util.List;
 
-public interface Equipment<name> {
-    public String getName();
+public abstract class Equipment<name> {
+    private String name;
+    public String getName(){return this.name;};
     //public Watt getPower();
-    public int getNetPrice();
-    public Currency getDiscountPrice();
+    public abstract int getNetPrice();
+    public abstract Currency getDiscountPrice();
 
-    public void add(Equipment equipment);
-    public void remove(Equipment equipment);
-    public List<Equipment> createIterator();
+    public abstract void add(Equipment equipment);
+    public abstract void remove(Equipment equipment);
+    public abstract List<Equipment> createIterator();
 
 }
