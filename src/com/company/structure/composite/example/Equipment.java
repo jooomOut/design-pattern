@@ -8,10 +8,16 @@ public abstract class Equipment<name> {
     public String getName(){return this.name;};
     //public Watt getPower();
     public abstract int getNetPrice();
-    public abstract Currency getDiscountPrice();
+    //public abstract Currency getDiscountPrice();
 
-    public abstract void add(Equipment equipment);
-    public abstract void remove(Equipment equipment);
-    public abstract List<Equipment> createIterator();
+    public void add(Equipment equipment){
+        throw new UnsupportedOperationException();
+    }
+    public void remove(Equipment equipment){
+        throw new UnsupportedOperationException();
+    }
+    public List<Equipment> createIterator(){
+        throw new UnsupportedOperationException();
+    }
 
 }
