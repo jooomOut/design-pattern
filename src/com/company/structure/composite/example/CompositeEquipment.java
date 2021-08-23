@@ -21,18 +21,13 @@ public class CompositeEquipment extends Equipment {
     }
 
     @Override
-    public Currency getDiscountPrice() {
-        return null;
-    }
-    // 장비 리스트에 장비를 추가.
-    @Override
     public void add(Equipment equipment) {
-
+        this.equipmentList.add(equipment);
     }
 
     @Override
     public void remove(Equipment equipment) {
-
+        this.equipmentList.removeIf(target -> target.equals(equipment));
     }
     // 장비 리스트 순
     @Override
