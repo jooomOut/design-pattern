@@ -1,10 +1,9 @@
-package com.company.structure.composite;
+package com.company.structure.composite.example;
 
 import java.util.Currency;
-import java.util.Iterator;
 import java.util.List;
 
-public class CompositeEquipment implements Equipment {
+public class CompositeEquipment extends Equipment {
     private List<Equipment> equipmentList;
 
     @Override

@@ -1,12 +1,10 @@
-package com.company.structure.composite;
+package com.company.structure.composite.example;
 
-import java.util.ArrayList;
 import java.util.Currency;
-import java.util.Iterator;
 import java.util.List;
 
 public abstract class Equipment<name> {
-    private String name;
+    protected String name;
     public String getName(){return this.name;};
     //public Watt getPower();
     public abstract int getNetPrice();

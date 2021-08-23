@@ -1,18 +1,16 @@
-package com.company.structure.composite;
+package com.company.structure.composite.example;
 
 import java.util.Currency;
-import java.util.Iterator;
 import java.util.List;
 
-public class FloppyDisk implements Equipment {
-    @Override
-    public String getName() {
-        return null;
+public class FloppyDisk extends Equipment {
+    FloppyDisk(String name){
+        this.name = name;
     }
 
     @Override
     public int getNetPrice() {
-        return null;
+        return 0;
     }
 
     @Override
