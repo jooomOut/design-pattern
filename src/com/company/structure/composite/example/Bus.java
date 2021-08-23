@@ -1,7 +1,7 @@
 package com.company.structure.composite.example;
 
-public class Chassis extends CompositeEquipment{
-    Chassis(String name){
+public class Bus extends CompositeEquipment{
+    Bus(String name){
         this.name = name;
     }
 
